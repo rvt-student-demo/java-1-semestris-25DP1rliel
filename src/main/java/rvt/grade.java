@@ -7,6 +7,7 @@ public class grade {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the Score:");
         int rez = Integer.parseInt(scan.nextLine());
+        scan.close();
         System.out.println("");
         if(rez > 100) {
             System.out.println("Increaible!");

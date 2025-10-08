@@ -9,6 +9,7 @@ public class addition {
         int i1 = Integer.parseInt(scan.nextLine());
         System.out.println("Ievadiet otro skaitli:");
         int i2 = Integer.parseInt(scan.nextLine());
+        scan.close();
         int sum = i1 + i2;
         System.out.println("Summa:");
         System.out.println(sum);

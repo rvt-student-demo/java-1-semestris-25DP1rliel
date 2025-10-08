@@ -1,6 +1,5 @@
 package rvt;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Part5 {
@@ -13,6 +12,7 @@ public class Part5 {
         for(int i = 0;true;i++) {
             System.out.println("Give a number:");
             i = Integer.parseInt(scan.nextLine());
+            scan.close();
             if(i==-1) {
                 System.out.println("Thx! Bye!");
                 break;

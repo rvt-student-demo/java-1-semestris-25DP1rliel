@@ -11,9 +11,9 @@ public class div3 {
         int end = Integer.parseInt(scan.nextLine());
         scan.close();
         System.out.println("Skaitļi kas dalās ar 3: ");
-        div3(start,end);
+        Div3(start,end);
     }
-        private static void div3(int start,int end) {
+        private static void Div3(int start,int end) {
             for(int i=start;i<=end;i++) {
                 if(i%3==0) {
                     System.out.println(i);

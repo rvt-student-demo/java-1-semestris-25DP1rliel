@@ -11,6 +11,7 @@ public class avg {
         int i2 = Integer.parseInt(scan.nextLine());
         System.out.println("Ievadiet trešo skaitli:");
         int i3 = Integer.parseInt(scan.nextLine());
+        scan.close();
         int sum = (i1 + i2 + i3)/3;
         System.out.println("Summa:");
         System.out.println(sum);

@@ -16,6 +16,7 @@ public class numbers {
             inputs.add(i);
             sum += i;
         }
+        scan.close();
         System.out.println("Number of numbers: " + (inputs.size()-1));
         System.out.println("Sum of numbers: " + sum);
     }
