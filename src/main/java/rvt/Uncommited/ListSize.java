@@ -3,22 +3,30 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ListSize {
+
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
 
-        String index = "";
+        ArrayList<String> stuff = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+
+        String input = "";
+
+        // read lines until blank input
         while (true) {
-            index = scanner.nextLine();
+            input = sc.nextLine();
 
-            if (index == "") {
+            // empty input = stop
+            if (input.isEmpty()) {
                 break;
-            } else {
-                list.add(index);
+            }
+            else {
+                stuff.add(input);
             }
         }
 
-        scanner.close();
-        System.out.println("In total: " + list.size());
+        sc.close();
+
+        // print total size of list
+        System.out.println("In total: " + stuff.size());
     }
 }
